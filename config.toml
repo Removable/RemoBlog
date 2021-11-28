@@ -1,0 +1,106 @@
+baseURL = "https://blog.imguan.com/"
+title = "一个博客"
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+copyright = '2021'
+defaultContentLanguage = 'zh'
+
+[permalinks]
+  posts = '/:year/:month/:day/:filename/'
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "一个博客"
+description = "零件的个人博客"
+keywords = [ "Blog", "C-Sharp", "C#", "DotNet" ]
+author = "Remo"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "/assets/favicon.svg"
+  favicon16x16 = "/assets/favicon-16.png"
+  favicon32x32 = "/assets/favicon-32.png"
+  apple_touch_icon = "/assets/apple_icon_144"
+  safari_pinned_tab = "/assets/favicon.svg"
+
+  [params.label]
+  text = "个博客"
+  icon = "/assets/favicon.svg"
+  iconHeight = 35
+
+  [params.homeInfoParams]
+  Title = "一个博客"
+  Content = "Remo的个人博客"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Removable"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/Removable/RemoBlog/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "series"
+name = "Series"
+url = "/series/"
+weight = 10
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
