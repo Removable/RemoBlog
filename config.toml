@@ -6,8 +6,8 @@ enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-googleAnalytics = "UA-123-45"
-copyright = '2021'
+googleAnalytics = "UA-89235973-3"
+copyright = '2021 Removable'
 defaultContentLanguage = 'zh'
 
 [permalinks]
@@ -44,7 +44,7 @@ tocopen = false
   favicon = "/assets/favicon.svg"
   favicon16x16 = "/assets/favicon-16.png"
   favicon32x32 = "/assets/favicon-32.png"
-  apple_touch_icon = "/assets/apple_icon_144"
+  apple_touch_icon = "/assets/apple_icon_144.png"
   safari_pinned_tab = "/assets/favicon.svg"
 
   [params.label]
@@ -61,7 +61,7 @@ tocopen = false
   url = "https://github.com/Removable"
 
 [params.analytics.google]
-SiteVerificationTag = "XYZabc"
+SiteVerificationTag = "p6XWO2b5FCeudDakzAwu23HDRtbC7r_5XUa6cWXo3Z8"
 
   [params.cover]
   hidden = true
