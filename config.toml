@@ -14,8 +14,8 @@ defaultContentLanguage = 'zh'
   posts = '/:year/:month/:day/:filename/'
 
 [minify]
-disableXML = true
-minifyOutput = true
+disableXML = false
+minifyOutput = false
 
 [params]
 env = "production"
@@ -31,7 +31,7 @@ ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
-ShowCodeCopyButtons = false
+ShowCodeCopyButtons = true
 disableSpecial1stPost = false
 disableScrollToTop = false
 comments = false
@@ -69,7 +69,7 @@ SiteVerificationTag = "p6XWO2b5FCeudDakzAwu23HDRtbC7r_5XUa6cWXo3Z8"
   hiddenInSingle = true
 
   [params.editPost]
-  URL = "https://github.com/Removable/RemoBlog/content"
+  URL = "https://github.com/Removable/RemoBlog/tree/master/content"
   Text = "Suggest Changes"
   appendFilePath = true
 
