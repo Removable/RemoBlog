@@ -7,7 +7,7 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 googleAnalytics = "UA-89235973-3"
-copyright = '2021 Removable'
+copyright = '2021 © Remo'
 defaultContentLanguage = 'zh'
 
 [permalinks]
@@ -28,7 +28,7 @@ DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
 ShowReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
@@ -48,12 +48,12 @@ tocopen = false
   safari_pinned_tab = "/assets/favicon.svg"
 
   [params.label]
-  text = "个博客"
+  text = "一个博客"
   icon = "/assets/favicon.svg"
   iconHeight = 35
 
   [params.homeInfoParams]
-  Title = "一个博客"
+  Title = "欢迎~"
   Content = "Remo的个人博客"
 
   [[params.socialIcons]]
@@ -72,15 +72,6 @@ SiteVerificationTag = "p6XWO2b5FCeudDakzAwu23HDRtbC7r_5XUa6cWXo3Z8"
   URL = "https://github.com/Removable/RemoBlog/tree/master/content"
   Text = "Suggest Changes"
   appendFilePath = true
-
-  [params.fuseOpts]
-  isCaseSensitive = false
-  shouldSort = true
-  location = 0
-  distance = 1_000
-  threshold = 0.4
-  minMatchCharLength = 0
-  keys = [ "title", "permalink", "summary", "content" ]
 
 [[menu.main]]
 identifier = "categories"
