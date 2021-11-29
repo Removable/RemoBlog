@@ -6,12 +6,9 @@ tags: ["C#", "Code", ".NET"]
 categories: ["C#代码"]
 series: [""]
 ---
-
-## C#中的 explicit 和 implicit 关键字
-
 简单记录一下。
 
-#### explicit
+## explicit
 
 explicit 用于声明必须使用强制转换来调用的用户定义的类型转换运算符。
 
@@ -64,7 +61,7 @@ Console.WriteLine(newString);
 
 依然可以获得`Hello world!`，这里就将StringCombine类显式转换成了string类型。
 
-#### implicit
+## implicit
 
 implicit 作用与 explicit相似，只是 implicit 实现的是隐式转换。我们将上述代码中的 explicit 关键字 替换为 implicit 后，我们就可以将显式转换`(string)`去掉了：
 
@@ -74,7 +71,7 @@ string newString = stringCombine;
 Console.WriteLine(newString);
 ```
 
-#### 最后
+## 最后
 
 explicit 和 implicit 都可以起到转换类型的作用，区别仅仅是显式或隐式。
 

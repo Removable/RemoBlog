@@ -7,8 +7,6 @@ categories: ["开发工具"]
 series: [""]
 ---
 
-# DataGrip导出CSV文件中文乱码
-
 最近用DataGrip导出查询结果为CSV文件后，用Excel打开发现中文出现乱码的情况：
 
 ![中文乱码](https://i.v2ex.co/38J6biSO.png)

@@ -5,11 +5,6 @@ draft: false
 tags: ["Android"]
 categories: ["玩机经验"]
 ---
-
-
-
-# 解决Google Play报错DF-DFERH-01问题
-
 博主最近换了港版三星S10+，刚开始用港行系统的时候，Google Play使用一直没有任何问题。后来刷成国行系统后，在某一次系统重启之后，Google Play突然开始无法连接，显示“从服务器检索信息时出错。DF-DFERH-01”这个错误。
 
 ![DF-DFERH-01](https://vip1.loli.net/2020/01/01/MVTAvzrIquoXcWL.png)

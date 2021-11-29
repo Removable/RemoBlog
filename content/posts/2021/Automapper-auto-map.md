@@ -7,9 +7,7 @@ categories: ["开发记录"]
 series: [""]
 ---
 
-## 使用AutoMapper自动映射
-
-#### 安装Nuget包
+## 安装Nuget包
 
 通过.Net CLI安装
 
@@ -19,7 +17,7 @@ dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version
 
 该包会自动安装AutoMapper的依赖包。
 
-#### 配置AutoMapper
+## 配置AutoMapper
 
 在``Startup.cs``的ConfigureServices方法中配置：
 
@@ -49,7 +47,7 @@ services.AddAutoMapperProfiles(Configuration);
     }
 ```
 
-#### 使用
+## 使用
 
 通过构造函数注入：
 

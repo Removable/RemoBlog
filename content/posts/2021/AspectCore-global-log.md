@@ -6,10 +6,7 @@ tags: ["C#", ".NET", "Log"]
 categories: ["开发记录"]
 series: [""]
 ---
-
-### AspectCore 配合 Log4Net 全局记录Asp.Net Core Web Api异常日志
-
-#### 配置AspectCore-Framework
+## 配置AspectCore-Framework
 
 首先通过Nuget安装`AspectCore.Extensions.DependencyInjection`。
 

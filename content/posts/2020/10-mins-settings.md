@@ -7,8 +7,6 @@ categories: ["云"]
 series: [""]
 ---
 
-# 【转】10 分钟服务器安全设置，Ubuntu安全设置入门
-
 > 英文：Cody Littlewood
 >
 > 译者：伯乐在线 – Panblack

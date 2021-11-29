@@ -7,8 +7,6 @@ categories: ["开发记录"]
 series: [""]
 ---
 
-### vuex-electron使用dispatch的小坑
-
 最近使用的electron-vue框架中，自带了vuex-electron模块。本来照着vuex官方文档写的，结果发现this.$store.dispatch('example')无效，根本无法调用成功。
 
 经过反复被坑与Google+Baidu，终于发现vuex-electron这个模块引入了两个插件：
