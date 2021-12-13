@@ -76,4 +76,4 @@ ssh -i \"~/.ssh/TestKey\" <username>@<ip/url> -p<ssh端口号>
 
 此时保存配置文件并重新打开 Windows Terminal 即可！
 
-注：若提示 permission dine之类的错误，可以尝试删除`C:\Users\<用户名>\.ssh`目录下的`known_hosts`文件试试。
+注：若提示 permission denied之类的错误，可以尝试删除`C:\Users\<用户名>\.ssh`目录下的`known_hosts`文件试试。
