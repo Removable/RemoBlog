@@ -21,9 +21,9 @@ Header 中包含了该 Token 所使用的签名算法；Payload 中则含有一�
 
 `Microsoft.AspNetCore.Authentication.JwtBearer`
 
-`using Microsoft.IdentityModel.Tokens;`
+`Microsoft.IdentityModel.Tokens;`
 
-`using System.IdentityModel.Tokens.Jwt;`
+`System.IdentityModel.Tokens.Jwt;`
 
 ### JWT 相关参数配置
 
