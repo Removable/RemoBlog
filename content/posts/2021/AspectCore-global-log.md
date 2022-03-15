@@ -36,10 +36,10 @@ series: [""]
     }
 ```
 
-然后在`Startup.cs`中的`ConfigureServices`方法中**配置代理**
+然后在`Startup.cs`中的`ConfigureServices`方法中**配置代理**（.NET6中对应的是builder.Services）
 
 ```c#
-    services.(config =>
+    services.ConfigureDynamicProxy(config =>
     {
         services.AddTransient<IExmapleService, ExmapleService>();
         
@@ -87,6 +87,14 @@ series: [""]
         		//略
                 .UseServiceProviderFactory(new DynamicProxyServiceProviderFactory());
 ```
+
+.NET 6中可以使用：
+
+```c#
+builder.Host.UseServiceProviderFactory(new DynamicProxyServiceProviderFactory());
+```
+
+
 
 一般来说到这里就完成了，但是我在上面配置代理时，将Controller也配置为进行代理：``config.Interceptors.AddTyped<CustomInterceptorAttribute>(Predicates.ForService("*Controller"));``，因此，就需要进行一些额外的处理。
 
