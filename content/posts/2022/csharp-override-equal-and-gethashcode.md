@@ -114,5 +114,5 @@ Console.WriteLine(hashSet.Add(e2)); //False
 Console.WriteLine(hashSet.Add(e3)); //False
 ```
 
-> 有需要的话还可以重载（overloading）== 操作符，实现 `e1 == e2` 为 `True`
+> 有需要的话还可以重载（overload）== 操作符，实现 `e1 == e2` 为 `True`
 
