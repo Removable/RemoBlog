@@ -13,7 +13,7 @@ series: [""]
 
 ## 最终目标
 
-成功在 Docker 中运行 Harbor 服务，并配置 Nginx 反代以从外部访问 Harbor
+成功在 Docker 中运行 Harbor 服务（不使用默认的80和443端口），并通过配置 Nginx 反代以从外部访问 Harbor
 
 
 
@@ -75,13 +75,17 @@ cp harbor.yml.tmpl harbor.yml
 vim harbor.yml
 ```
 
+> Harbor 默认会使用 80 和 443 端口以提供外部访问。但是一般来说，我们的系统上都已经安装了 Nginx （或其他同类软件），所以这里我们会修改默认的端口，后面通过 Nginx 反向代理来使外部可访问。
+
 我们需要修改以下几处：
 
-- 将`hostname`修改为`0.0.0.0`
+- 将`hostname`修改为你的域名（此处不重要，原因见第三条）
 
 - 将`http:`下的`port`修改为其他未被占用的端口，比如`8081`。这是基于我的服务器的80端口已经被使用。
 
 - 将`https:`以及其下的`port`,`certificate`,`private_key`配置项全部注释掉（在每行的开头加上#号）。这是因为我们将通过 nginx 反代配置https访问，如果你希望直接设置https访问，请自行配置。
+
+- 找到默认注释的`external_url`配置项，取消注释。修改值为你要用于访问 Harbor 的地址，如：`https://register.example.com`。（需提前配置好解析）
 
 - （可选）配置`harbor_admin_password`，这将是默认的登录密码。
 
@@ -117,7 +121,7 @@ docker network inspect bridge --format='{{json .IPAM.Config}}'
 
 在 Nginx Proxy Manager 中添加反代配置：
 
-- 在`Domain Names`中填写为 Harbor 准备的域名（需提前配置好解析）。
+- 在`Domain Names`中填写为 Harbor 准备的域名（上面提到过的那个）。
 
 - 在 `Forward Hostname / IP`中填写上面结果中的`Gateway`的IP。
 - `Forward Port`填写之前配置的`http`的`port`项的端口（如8081）。
