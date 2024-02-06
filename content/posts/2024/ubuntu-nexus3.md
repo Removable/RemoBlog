@@ -145,6 +145,8 @@ docker exec nexus3-server cat /nexus-data/admin.password
 
 > 建议参考上面的步骤新建一个专门用于拉取 APT 仓库的账号，直接使用 admin 账号有风险。
 
+> 本段内容参考：https://think.unblog.ch/en/how-to-use-apt-with-apt_auth-conf-on-debian/
+
 在 `/etc/apt/auth.conf.d` 目录下新建一个文件，比如 `nexus.conf`：
 
 ```bash
